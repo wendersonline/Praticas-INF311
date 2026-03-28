@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">calculatorA</string>
+    <string name="value_1">Valor 1:</string>
+    <string name="value_2">Valor 2:</string>
+    <string name="inputField">Digite aqui o número que deseja operar</string>
+    <string name="resultText">"O resultado é:  "</string>
+    <string name="resultNumber">0</string>
+    <string name="resultAlertValue">Digite OS DOIS números!</string>
+    <string name="resultAlertNotNumber">Digite APENAS números!</string>
+    <string name="resultAlertZero">Divisão por zero!</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="mult">*</string>
+    <string name="divide">/</string>
+</resources>
