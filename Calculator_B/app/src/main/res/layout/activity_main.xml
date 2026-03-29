@@ -1,20 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="120dp"
     tools:context=".MainActivity">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/visor"
+        android:text="@string/visorInputs"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:inputType="none"
+        android:editable="false"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonsTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/seven"
+            android:tag="7"
+            android:text="@string/seven"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/eight"
+            android:tag="8"
+            android:text="@string/eight"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/seven"
+            android:layout_marginStart="7dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/nine"
+            android:tag="9"
+            android:text="@string/nine"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/eight"
+            android:layout_marginStart="7dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/divider"
+            android:tag="/"
+            android:text="@string/divide"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/nine"
+            android:layout_marginStart="7dp"
+            android:onClick="pressOperator"
+            />
+
+        <Button
+            android:id="@+id/deleteOne"
+            android:tag="deleteOne"
+            android:text="@string/deleteOne"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/divider"
+            android:layout_marginStart="7dp"
+            android:onClick="eraseNumber"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/buttonsMidleTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/four"
+            android:tag="4"
+            android:text="@string/four"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/five"
+            android:tag="5"
+            android:text="@string/five"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/four"
+            android:layout_marginStart="7dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/six"
+            android:tag="6"
+            android:text="@string/six"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/five"
+            android:layout_marginStart="7dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/multiply"
+            android:tag="*"
+            android:text="@string/mult"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/six"
+            android:layout_marginStart="7dp"
+            android:onClick="pressOperator"
+            />
+
+        <Button
+            android:id="@+id/deleteAll"
+            android:tag="C"
+            android:text="@string/deleteAll"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/multiply"
+            android:layout_marginStart="7dp"
+            android:onClick="eraseNumber"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/buttonsMidleBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsMidleTop"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/one"
+            android:tag="1"
+            android:text="@string/one"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/two"
+            android:tag="2"
+            android:text="@string/two"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/one"
+            android:layout_marginStart="7dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/three"
+            android:tag="3"
+            android:text="@string/three"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/two"
+            android:layout_marginStart="7dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/minus"
+            android:tag="-"
+            android:text="@string/minus"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/three"
+            android:layout_marginStart="7dp"
+            android:onClick="pressOperator"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/buttonsBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsMidleBottom"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/zero"
+            android:tag="0"
+            android:text="@string/zero"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:onClick="pressNumber"
+            />
+
+        <Button
+            android:id="@+id/dot"
+            android:tag="."
+            android:text="@string/dot"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/zero"
+            android:layout_marginStart="7dp"
+            android:onClick="pressDot"
+            />
+
+        <Button
+            android:id="@+id/plus"
+            android:tag="+"
+            android:text="@string/plus"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/dot"
+            android:layout_marginStart="7dp"
+            android:onClick="pressOperator"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/equal"
+        android:tag="="
+        android:text="@string/equal"
+        android:layout_width="60dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/buttonsMidleTop"
+        android:layout_toRightOf="@id/buttonsBottom"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:onClick="pressEqual"
+        />
+
+</RelativeLayout>
