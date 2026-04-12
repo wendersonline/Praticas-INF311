@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="120dp"
+    tools:context=".RelatoryScreen">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="36.sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/title_result"
+        />
+
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:textSize="22.sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/name_user"
+            />
+
+        <TextView
+            android:id="@+id/name_result"
+            android:layout_toEndOf="@id/name_text_view"
+            android:layout_marginStart="5.dp"
+            android:textSize="22.sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/empty"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/age"
+        android:layout_below="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/age_text_view"
+            android:textSize="22.sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/age_user"
+            />
+
+        <TextView
+            android:id="@+id/age_result"
+            android:layout_toEndOf="@id/age_text_view"
+            android:layout_marginStart="5.dp"
+            android:textSize="22.sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/empty"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/weight"
+        android:layout_below="@id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/weight_text_view"
+            android:textSize="22.sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/weight_user"
+            />
+
+        <TextView
+            android:id="@+id/weight_result"
+            android:layout_toEndOf="@id/weight_text_view"
+            android:layout_marginStart="5.dp"
+            android:textSize="22.sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/empty"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/height"
+        android:layout_below="@id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/height_text_view"
+            android:textSize="22.sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/height_user"
+            />
+
+        <TextView
+            android:id="@+id/height_result"
+            android:layout_toEndOf="@id/height_text_view"
+            android:layout_marginStart="5.dp"
+            android:textSize="22.sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/empty"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/imc"
+        android:layout_below="@id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/imc_text_view"
+            android:textSize="22.sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/imc_user"
+            />
+
+        <TextView
+            android:id="@+id/imc_result"
+            android:layout_toEndOf="@id/imc_text_view"
+            android:layout_marginStart="5.dp"
+            android:textSize="22.sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/empty"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/classification"
+        android:layout_below="@id/imc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/classification_text_view"
+            android:textSize="22.sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/classification_user"
+            />
+
+        <TextView
+            android:id="@+id/classification_result"
+            android:layout_toEndOf="@id/classification_text_view"
+            android:layout_marginStart="5.dp"
+            android:textSize="22.sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/empty"
+            />
+
+    </RelativeLayout>
+
+
+   <Button
+       android:id="@+id/back_button"
+       android:layout_below="@id/classification"
+       android:layout_marginTop="20.dp"
+       android:textSize="20.sp"
+       android:textStyle="bold"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/back_button"
+       android:onClick="back_fun"
+       android:layout_centerHorizontal="true"
+       />
+
+
+</RelativeLayout>

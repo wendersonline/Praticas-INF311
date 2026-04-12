@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="120dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36.sp"
+        android:textStyle="bold"
+        android:text= "@string/app_name"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/name_input"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:textSize="20.sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/name_user" />
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_below="@id/name_text_view"
+            android:textSize="20.sp"
+            android:layout_width= "match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/inline_infos"
+        android:layout_below="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"> <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/age_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/age_user"
+            />
+
+        <EditText
+            android:id="@+id/age_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/weight_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/weight_user"
+                />
+
+            <EditText
+                android:id="@+id/weight_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:inputType="numberDecimal"
+                android:hint="@string/empty"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/height_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/height_user"
+                />
+
+            <EditText
+                android:id="@+id/height_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:inputType="numberDecimal"
+                android:hint="@string/empty"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/send_forms"
+        android:textSize="20.sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/inline_infos"
+        android:layout_marginTop="20.dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "@string/send_button"
+        android:onClick="click_relatory"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/error"
+        android:textSize="24.sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_error"
+        android:layout_below="@+id/send_forms"
+        android:layout_marginTop="10.dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/error_lower_or_zero"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

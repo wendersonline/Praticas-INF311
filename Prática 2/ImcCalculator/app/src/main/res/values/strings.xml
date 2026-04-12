@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Imc Calculator</string>
+    <string name="title_result">Resultado do IMC</string>
+
+    <string name="name_user">Nome: </string>
+    <string name="age_user">Idade: </string>
+    <string name="weight_user">Peso (KG): </string>
+    <string name="height_user">Altura (M): </string>
+    <string name="send_button">Relatório Nutricional</string>
+
+    <string name="back_button">Realizar Novo Cálculo</string>
+    <string name="imc_user">Imc: </string>
+    <string name="classification_user">Classificação: </string>
+    <string name="empty">0.00</string>
+
+    <string name="error_lower_or_zero">O peso e/ou Altura não podem ser vazios, menores ou iguais a zero!</string>
+</resources>
