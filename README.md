@@ -1,2 +1,2 @@
-# Pratica_01-INF311
- Prática 01 da disciplina de Programação para dispositivos móveis.
+# Práticas da Disciplina de Programação para Dispositivos Móveis - INF 311 UFV
+ Práticas desenvolvidas durante a disciplina de Programação para dispositivos móveis.
