@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textSize="32sp" />
+
+    <View
+        android:id="@+id/divider_title"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#CCCCCC" />
+
+    <RelativeLayout
+        android:id="@+id/options"
+        android:layout_below="@id/divider_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/born_city"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/born_city"
+                android:textSize="18sp"
+                android:onClick="view_location" />
+        </RelativeLayout>
+
+        <View android:id="@+id/divider_1"
+            android:layout_below="@id/city"
+            android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <RelativeLayout
+            android:id="@+id/house"
+            android:layout_below="@id/divider_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/house_vicosa"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/house_vicosa"
+                android:textSize="18sp"
+                android:onClick="view_location" />
+        </RelativeLayout>
+
+        <View android:id="@+id/divider_2"
+            android:layout_below="@id/house"
+            android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <RelativeLayout
+            android:id="@+id/deppartment"
+            android:layout_below="@id/divider_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/deppartment_adress"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deppartment_adress"
+                android:textSize="18sp"
+                android:onClick="view_location" />
+        </RelativeLayout>
+
+        <View android:id="@+id/divider_3"
+            android:layout_below="@id/deppartment"
+            android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <RelativeLayout
+            android:id="@+id/report"
+            android:layout_below="@id/divider_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/report_item"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report"
+                android:textSize="18sp"
+                android:onClick="view_report" />
+        </RelativeLayout>
+
+        <View android:id="@+id/divider_4"
+            android:layout_below="@id/report"
+            android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <RelativeLayout
+            android:id="@+id/close"
+            android:layout_below="@id/divider_4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/close_app"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/close_app"
+                android:textSize="18sp"
+                android:onClick="close" />
+        </RelativeLayout>
+
+        <View android:id="@+id/divider_5"
+            android:layout_below="@id/close"
+            android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gps Location</string>
+    <string name="born_city">Minha Cidade Natal</string>
+    <string name="house_vicosa">Minha Casa em Viçosa</string>
+    <string name="deppartment_adress">Meu Departamento</string>
+    <string name="report">Relatório</string>
+    <string name="close_app">Fechar Aplicação</string>
+    <string name="back">Voltar</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gps_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GpsActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/top_bar_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:onClick="back_to_list" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_cidade_natal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/born_city"
+                android:textSize="12sp"
+                android:onClick="go_born_city" />
+
+            <Button
+                android:id="@+id/btn_vicosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/house_vicosa"
+                android:textSize="12sp"
+                android:onClick="go_vicosa" />
+
+            <Button
+                android:id="@+id/btn_dpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deppartment_adress"
+                android:textSize="12sp"
+                android:onClick="go_dpi" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btn_localizacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Localização"
+        android:onClick="get_location" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar_scroll"
+        android:layout_above="@id/btn_localizacao" />
+
+</RelativeLayout>
