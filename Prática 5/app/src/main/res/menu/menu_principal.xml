@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuMapa" android:title="Mapa de Check-in" android:showAsAction="never"/>
+    <item android:id="@+id/menuGestao" android:title="Gestão de Check-in" android:showAsAction="never"/>
+    <item android:id="@+id/menuRelatorio" android:title="Lugares mais visitados" android:showAsAction="never"/>
+</menu>
